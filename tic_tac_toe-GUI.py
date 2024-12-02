@@ -1,68 +1,7 @@
-'''choices = []
-
-for x in range (0, 9) :
-    choices.append(str(x + 1))
-
-Turn = True
-Winner = False
-Ans='n'
-def printboard() :
-     print( '\n -----')
-     print( '|' + choices[0] + '|' + choices[1] + '|' + choices[2] + '|')
-     print( '|' + choices[3] + '|' + choices[4] + '|' + choices[5] + '|')
-     print( '|' + choices[6] + '|' + choices[7] + '|' + choices[8] + '|')
-while Ans=='n':
-    while not Winner :
-        printboard()
-        
-        if Turn :
-            choice = int(input("Player 1  >> "))
-        else :
-            choice = int(input("Player 2  >> "))
-
-        if choice > 9 and choice < 1 :
-            print("Please next time enter under 1 to 9")
-            break
-
-        if choices[choice - 1] == 'X' or choices [choice-1] == 'O':
-            print("the game is tied ")
-            break
-
-        if Turn :
-            choices[choice - 1] = 'X'
-        else :
-            choices[choice - 1] = 'O'
-
-        Turn = not Turn
-
-        for x in range (0, 3) :
-            y = x * 3
-
-            if (choices[y] == choices[(y + 1)] and choices[y] == choices[(y + 2)]) :
-                Winner = True
-                printboard()
-
-            if (choices[x] == choices[(x + 3)] and choices[x] == choices[(x + 6)]) :
-                Winner = True
-                printboard()
-
-        if((choices[0] == choices[4] and choices[0] == choices[8]) or (choices[2] == choices[4] and choices[4] == choices[6])) :
-            Winner = True
-            printboard()
-
-    Ans=input("Do you want to Know who is the winner of this game ? ")
-    continue
-print ("Player " + str(int(Turn + 1)) + " wins!\n")'''
-
-
-
-
-
 # Tic Tac Toe game with GUI
-# using tkinter
-  
+# using tkinter  
 # importing all necessary libraries
-'''import random
+import random
 import tkinter
 from tkinter import *
 from functools import partial
@@ -283,4 +222,4 @@ def play():
   
 # Call main function
 if __name__ == '__main__':
-    play()'''
+    play()
